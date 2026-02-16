@@ -99,9 +99,68 @@
       object-fit: cover;
       border-radius: 8px;
     }
+
+    /* MOTD POPUP */
+    #motd {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.45);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 99999;
+    }
+
+    #motd-box {
+      background: white;
+      padding: 25px;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 12px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+      animation: pop 0.25s ease-out;
+    }
+
+    #motd-box h2 {
+      margin-top: 0;
+      font-size: 1.5rem;
+    }
+
+    #motd-close {
+      margin-top: 15px;
+      padding: 10px 20px;
+      background: #6aa6ff;
+      border: none;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+
+    #motd-close:hover {
+      background: #4f8df0;
+    }
+
+    @keyframes pop {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
   </style>
 </head>
 <body>
+
+<!-- MOTD POPUP -->
+<div id="motd">
+  <div id="motd-box">
+    <h2>Message of the Day</h2>
+    <p id="motd-text">Welcome back! Enjoy the new games and updates.</p>
+    <button id="motd-close">Close</button>
+  </div>
+</div>
 
 <header>
   <h1>Hallway Hub</h1>
@@ -125,9 +184,9 @@
 <div class="grid" id="games"></div>
 
 <script>
-  // Your raw list goes here
+  // FULL GAME LIST
   const raw = `
-      <a data-cat="adventure" href="games/bob-the-robber-2/"><img src="images/bob-the-robber-2.png" alt="Bob the Robber 2"></a>
+<a data-cat="adventure" href="games/bob-the-robber-2/"><img src="images/bob-the-robber-2.png" alt="Bob the Robber 2"></a>
 
 <a data-cat="platformer" href="games/vex7/"><img src="images/vex7.jpeg" alt="Vex 7"></a>
 <a data-cat="platformer" href="games/vex6/"><img src="images/vex6.jpeg" alt="Vex 6"></a>
@@ -195,8 +254,6 @@
 
 <a data-cat="arcade" href="games/spacebar-clicker/"><img src="games/spacebar-clicker/spacebar-clicker.png" alt="Spacebar Clicker"></a>
 
-<a data-cat="arcade" href="games/spiral-roll/"><img src="games/spiral-roll/spiral-roll.png" alt="Spiral Roll"></a>
-
 <a data-cat="sports" href="games/soccer-random/"><img src="games/soccer-random/soccer-random.webp" alt="Soccer Random"></a>
 <a data-cat="sports" href="games/volley-random/"><img src="games/volley-random/volley-random.webp" alt="Volley Random"></a>
 
@@ -225,7 +282,6 @@
 <a data-cat="action" href="games/burn/"><img src="games/burn/burn.jpg" alt="Burnin' Rubber"></a>
 
 <a data-cat="arcade" href="games/sb/"><img src="games/sb/sb.jpg" alt="Sand Boxels"></a>
-
 
   `;
 
@@ -297,6 +353,22 @@
       });
     });
   });
+
+  // MOTD LOGIC
+  document.getElementById("motd-close").onclick = () => {
+    document.getElementById("motd").style.display = "none";
+  };
+
+  const messages = [
+    "Welcome back! Enjoy the new games.",
+    "Tip: Use the search bar to find games faster.",
+    "New games added today — check the Action category.",
+    "Have fun, but stay safe online.",
+    "More updates coming soon!"
+  ];
+
+  document.getElementById("motd-text").innerText =
+    messages[Math.floor(Math.random() * messages.length)];
 </script>
 
 </body>
