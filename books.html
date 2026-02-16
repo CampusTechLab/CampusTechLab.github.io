@@ -215,102 +215,130 @@
 <script>
   // You will paste your game list here
   const raw = `
-  <a data-cat="adventure" href="games/bob-the-robber-2/"><img src="images/bob-the-robber-2.png" alt="Bob the Robber 2"></a>
+  <a href="games/bob-the-robber-2/" data-cat="adventure"><img src="images/bob-the-robber-2.png" alt="Bob the Robber 2"></a>
+<a href="games/vex7/" data-cat="platformer"><img src="images/vex7.jpeg" alt="Vex 7"></a>
+<a href="games/vex6/" data-cat="platformer"><img src="images/vex6.jpeg" alt="Vex 6"></a>
+<a href="games/minecraft/" data-cat="adventure"><img src="images/mc.png" alt="Minecraft"></a>
+<a href="games/moto-x3m/" data-cat="racing"><img src="images/moto-x3m.jpg" alt="Moto X3M"></a>
+<a href="games/retro-bowl/" data-cat="sports"><img src="images/retro-bowl.jpg" alt="Retro Bowl"></a>
+<a href="games/drive-mad/" data-cat="racing"><img src="images/drive-mad.jpg" alt="Drive Mad"></a>
+<a href="games/slope/" data-cat="arcade"><img src="images/slope.jpg" alt="Slope"></a>
+<a href="games/motox3m2/" data-cat="racing"><img src="images/motox3m2.jpg" alt="Moto X3M 2"></a>
+<a href="games/Idle Breakout/" data-cat="idle"><img src="games/Idle Breakout/image.png" alt="Idle Breakout"></a>
+<a href="games/getaway-shootout/" data-cat="action"><img src="games/getaway-shootout/img/images.jpg" alt="Getaway Shootout"></a>
+<a href="games/bitlife/" data-cat="adventure"><img src="games/bitlife/logo.png" alt="BitLife"></a>
+<a href="games/subway-surfers-ny/" data-cat="arcade"><img src="games/subway-surfers-ny/NewYorkIcon.png" alt="Subway Surfers New York"></a>
+<a href="games/just-fall/" data-cat="io"><img src="games/just-fall/unnamed.png" alt="Just Fall"></a>
+<a href="games/2048/" data-cat="puzzle"><img src="games/2048/2048.png" alt="2048"></a>
+<a href="games/vex3/" data-cat="platformer"><img src="images/vex3.jpg" alt="Vex 3"></a>
+<a href="games/vex4/" data-cat="platformer"><img src="images/vex4.jpg" alt="Vex 4"></a>
+<a href="games/vex5/" data-cat="platformer"><img src="images/vex5.jpg" alt="Vex 5"></a>
+<a href="games/cookie-clicker/" data-cat="idle"><img src="games/cookie-clicker/cookie1.jpeg" alt="Cookie Clicker"></a>
+<a href="games/poly-track/" data-cat="racing"><img src="games/poly-track/poly-track.jpg" alt="Poly Track"></a>
+<a href="games/bloxorz/" data-cat="puzzle"><img src="games/bloxorz/blox.jpg" alt="Bloxorz"></a>
+<a href="games/ss-tokyo/" data-cat="arcade"><img src="games/ss-tokyo/ss-tokyo.webp" alt="Subway Surfers Tokyo"></a>
+<a href="games/smhook/" data-cat="platformer"><img src="games/smhook/logo.png" alt="Stickman Hook"></a>
+<a href="games/r-a/" data-cat="action"><img src="games/r-a/logo.jpeg" alt="Ragdoll Archers"></a>
+<a href="games/r-s/" data-cat="action"><img src="games/r-s/unnamed.webp" alt="Race Survival Arena King"></a>
+<a href="games/a-u/" data-cat="adventure"><img src="games/a-u/a-u.png" alt="Among Us"></a>
+<a href="games/ovo/" data-cat="platformer"><img src="games/ovo/ovo.png" alt="OvO"></a>
+<a href="games/sls/" data-cat="sports"><img src="games/sls/sls.webp" alt="Super Liquid Soccer"></a>
+<a href="games/a-m/" data-cat="action"><img src="games/a-m/unnamed.webp" alt="Arrow Master"></a>
+<a href="games/gag/" data-cat="idle"><img src="games/gag/gag.webp" alt="Grow a Garden"></a>
+<a href="games/u-y/" data-cat="adventure"><img src="games/u-y/u-y.webp" alt="Undertale Yellow"></a>
+<a href="games/bike-obby/" data-cat="platformer"><img src="games/bike-obby/bike-obby.webp" alt="Obby But You're on a Bike"></a>
+<a href="games/99-n/" data-cat="adventure"><img src="games/99-n/99-n.webp" alt="99 Nights in the Forest"></a>
+<a href="games/i-a/" data-cat="idle"><img src="games/99-n/i-a.jpg" alt="Idle Ants"></a>
+<a href="games/d-d/" data-cat="action"><img src="games/d-d/d-d.png" alt="Deadly Descent"></a>
+<a href="games/m-m/" data-cat="arcade"><img src="games/m-m/m-m.webp" alt="Monkey Mart"></a>
+<a href="games/g-s/" data-cat="action"><img src="games/g-s/g-s.webp" alt="Gun Spin"></a>
+<a href="games/s-r/" data-cat="sports"><img src="games/s-r/s-r.png" alt="Snow Rider"></a>
+<a href="games/basket-random/" data-cat="sports"><img src="games/basket-random/basket.png" alt="Basket Random"></a>
+<a href="games/slow-roads/" data-cat="racing"><img src="games/slow-roads/slow-roads.webp" alt="Slow Roads"></a>
+<a href="games/r-h/" data-cat="action"><img src="games/r-h/r-h.png" alt="Ragdoll Hit"></a>
+<a href="games/spiral-roll/" data-cat="arcade"><img src="games/spiral-roll/spiral-roll.png" alt="Spiral Roll"></a>
+<a href="games/rooftop-snipers/" data-cat="action"><img src="games/rooftop-snipers/rooftop-snipers.webp" alt="Rooftop Snipers"></a>
+<a href="games/drift-boss/" data-cat="racing"><img src="games/drift-boss/drift-boss.png" alt="Drift Boss"></a>
+<a href="games/dune/" data-cat="racing"><img src="games/dune/dune.jpg" alt="Dune"></a>
+<a href="games/e-car/" data-cat="racing"><img src="games/e-c.jpg" alt="Escape Car"></a>
+<a href="games/t-a-b/" data-cat="arcade"><img src="games/t-a-b/t-a-b.jpeg" alt="Thorns And Ballons"></a>
+<a href="games/basketball-stars/" data-cat="sports"><img src="games/basketball-stars/basketball-stars.webp" alt="Basketball Stars"></a>
+<a href="games/incredibox/" data-cat="arcade"><img src="games/incredibox/incredibox.webp" alt="Incredibox"></a>
+<a href="games/1v1lol/" data-cat="action"><img src="games/1v1lol/1v1lol.webp" alt="1v1.lol"></a>
+<a href="games/hard-game/" data-cat="puzzle"><img src="games/hard-game/hard-game.webp" alt="The Worlds Hardest Game"></a>
+<a href="games/t-r-2/" data-cat="arcade"><img src="games/t-r-2/t-r-2.webp" alt="Temple Run 2"></a>
+<a href="games/eggy-car/" data-cat="arcade"><img src="games/eggy-car/eggy-car.webp" alt="Eggy Car"></a>
+<a href="games/e-scooter/" data-cat="racing"><img src="games/e-scooter/e-scooter.jpg" alt="E-Scooter"></a>
+<a href="games/red-ball/" data-cat="platformer"><img src="games/red-ball/red-ball.jpg" alt="Red Ball 4"></a>
+<a href="games/p-c/" data-cat="sports"><img src="games/p-c/p-c.png" alt="Pocket Champions"></a>
+<a href="games/spacebar-clicker/" data-cat="idle"><img src="games/spacebar-clicker/spacebar-clicker.png" alt="Spacebar Clicker"></a>
+<a href="games/bridge-race/" data-cat="arcade"><img src="games/bridge-race/bridge-race.webp" alt="Bridge Race"></a>
+<a href="games/blumgi-slime/" data-cat="arcade"><img src="games/blumgi-slime/blumgi-slime.png" alt="Blumgi Slime"></a>
+<a href="games/paper.io-2/" data-cat="io"><img src="games/paper.io-2/paper.io-2.png" alt="Paper.io 2"></a>
+<a href="games/golf-orbit/" data-cat="sports"><img src="games/golf-orbit/golf-orbit.webp" alt="Golf Orbit"></a>
+<a href="games/ultrakill/" data-cat="action"><img src="games/ultrakill/ultrakill.png" alt="UltraKill"></a>
+<a href="games/clash/" data-cat="action"><img src="games/clash/clash.png" alt="Clash Royale"></a>
+<a href="games/little/" data-cat="puzzle"><img src="games/little/little.png" alt="Little Alchemy 2"></a>
+<a href="games/math-duck/" data-cat="puzzle"><img src="games/math-duck/math-duck.webp" alt="Math Duck"></a>
+<a href="games/gold-digger/" data-cat="puzzle"><img src="games/gold-digger/gold-digger.webp" alt="Gold Digger FRVR"></a>
+<a href="games/blumgi-rocket/" data-cat="arcade"><img src="games/blumgi-rocket/blumgi-rocket.webp" alt="Blumgi Rocket"></a>
+<a href="games/fruit-ninja/" data-cat="arcade"><img src="games/fruit-ninja/fruit-ninja.png" alt="Fruit Ninja"></a>
+<a href="games/drift-hunters/" data-cat="racing"><img src="games/drift-hunters/drift-hunters.png" alt="Drift Hunters"></a>
+<a href="o-d" data-cat="platformer"><img src="o-d/o-d.avif" alt="OvO Dimensions"></a>
+<a href="games/soccer-random/" data-cat="sports"><img src="games/soccer-random/soccer-random.webp" alt="Soccer Random"></a>
+<a href="games/volley-random/" data-cat="sports"><img src="games/volley-random/volley-random.webp" alt="Volley Random"></a>
+<a href="games/boxing-random/" data-cat="sports"><img src="games/boxing-random/boxing-random.webp" alt="Boxing Random"></a>
+<a href="/snowball" data-cat="io"><img src="games/snowball.io/snowball.io.jpg" alt="Snowball.io"></a>
+<a href="games/pf1/" data-cat="racing"><img src="games/pf1/pf1.png" alt="Parking Fury"></a>
+<a href="games/pf2/" data-cat="racing"><img src="games/pf2/pf2.jpg" alt="Parking Fury 2"></a>
+<a href="games/tunnel-rush/" data-cat="arcade"><img src="games/tunnel-rush/tunnel-rush.webp" alt="Tunnel Rush 2"></a>
+<a href="games/yoho/" data-cat="io"><img src="games/yoho/yoho.png" alt="Yohoho.io"></a>
+<a href="games/dl3/" data-cat="sports"><img src="games/dl3/dl3.jpg" alt="Duck Life 3"></a>
+<a href="games/archery/" data-cat="sports"><img src="games/archery/archery.png" alt="Archery World Tour"></a>
+<a href="games/rise-higher/" data-cat="puzzle"><img src="games/rise-higher/rise-higher.jpeg" alt="Rise Higher"></a>
+<a href="games/happy-glass/" data-cat="puzzle"><img src="games/happy-glass/happy-glass.png" alt="Happy Glass"></a>
+<a href="games/unicycle-hero/" data-cat="sports"><img src="games/unicycle-hero/unicycle-hero.png" alt="Unicycle Hero"></a>
+<a href="games/stick-merge/" data-cat="arcade"><img src="games/stick-merge/stick-merge.webp" alt="Stick Merge"></a>
+<a href="games/tf/" data-cat="arcade"><img src="games/tf/tf.png" alt="Tiny Fishing"></a>
+<a href="games/swingo/" data-cat="arcade"><img src="games/b-s/b-s.png" alt="Blumgi Swingo"></a>
+<a href="games/msc2/" data-cat="racing"><img src="games/msc2/msc2.png" alt="Madalin Stunt Cars 2"></a>
+<a href="games/ping1/" data-cat="sports"><img src="games/ping/ping.avif" alt="Ping Pong Go"></a>
+<a href="games/2min/" data-cat="sports"><img src="games/2min/418572a6bbddb5359501b93153290fba.png" alt="2 Minute Football"></a>
+<a href="games/ten-basket/" data-cat="sports"><img src="games/ten-basket/ten-basket.png" alt="Ten Basket"></a>
+<a href="games/pko/" data-cat="sports"><img src="games/pko/pko.png" alt="Penalty Kick Online"></a>
+<a href="games/mining/" data-cat="idle"><img src="games/mining/mining.webp" alt="Idle Mining Empire"></a>
+<a href="games/bottle-flip/" data-cat="arcade"><img src="games/bottle-flip/bottle-flip.webp" alt="Bottle Flip"></a>
+<a href="games/idle-r/" data-cat="idle"><img src="games/idle-r/idle-r.webp" alt="Idle Restaurants"></a>
+<a href="games/crazy-cars/" data-cat="racing"><img src="games/crazy-cars/crazy-cars.webp" alt="Crazy Cars"></a>
+<a href="games/burn/" data-cat="racing"><img src="games/burn/burn.jpg" alt="Burnin' Rubber"></a>
+<a href="games/sb/" data-cat="arcade"><img src="games/sb/sb.jpg" alt="Sand Boxels"></a>
+<a href="/retro-bowl-college" data-cat="sports"><img src="games/rbc/rbc.webp" alt="Retro Bowl College"></a>
+<a href="games/holeio/" data-cat="io"><img src="games/holeio/holeio.webp" alt="Hole.io"></a>
+<a href="games/kart-bros/" data-cat="io"><img src="https://store-images.s-microsoft.com/image/apps.50957.14077711198622072.87de44b8-a3b1-4457-9a12-07ae7d1d2d1d.b7f82a68-5baf-43b2-a0f7-bba2ebf39c8c" alt="Kart Bros"></a>
+<a href="games/boxing-bros/" data-cat="action"><img src="games/boxing-bros/boxing-bros.avif" alt="wrestle bros"></a>
+<a href="/c-ro" data-cat="arcade"><img src="games/crossy-road.avif" alt="crossy road"></a>
+<a href="/geometry-dash" data-cat="platformer"><img src="images/geometry-dash.png" alt="Geometry Dash"></a>
+<a href="/smash-karts/" data-cat="io"><img src="games/smash-karts/s-k.png" alt="Smash Karts"></a>
+<a href="/rally-point/" data-cat="racing"><img src="games/rally-point/rally-point.webp" alt="Rally Point"></a>
+<a href="/wheelie-bike/" data-cat="racing"><img src="images/wheelie-bike.webp" alt="Wheelie Bike"></a>
+<a href="/moto-x3m-winter" data-cat="racing"><img src="images/moto-x3m-winter.jpeg" alt="Moto X3M Winter"></a>
+<a href="/orb-farm" data-cat="arcade"><img src="images/orb-farm.webp" alt="Orb Farm"></a>
+<a href="/monster-truck" data-cat="racing"><img src="images/monster-truck.jpeg" alt="Monster Truck Racing Arena"></a>
+<a href="/slope3" data-cat="arcade"><img src="images/slope3.webp" alt="Slope 3"></a>
+<a href="/parkour-race" data-cat="platformer"><img src="images/parkour-race.png" alt="Parkour Race"></a>
+<a href="/big-shot-boxing" data-cat="sports"><img src="images/big-shot-boxing.png" alt="Big Shot Boxing"></a>
+<a href="/twoball3D" data-cat="racing"><img src="images/twoball3D.jpeg" alt="Two Ball 3D"></a>
+<a href="/run3/tn6pS9dCf37xAhkJv" data-cat="arcade"><img src="games/run-3/run-3.png" alt="Run 3"></a>
+<a href="/shootz" data-cat="action"><img src="images/shootz.avif" alt="ShootZ"></a>
+<a href="/battle-wheels" data-cat="action"><img src="images/battle-wheels.jpg" alt="Battle Wheels"></a>
+<a href="/johnny-trigger" data-cat="action"><img src="images/johnny-trigger.avif" alt="Johnny trigger"></a>
+<a href="/cookie" data-cat="arcade"><img src="/cookie/icon.png" alt="Dalgona candy honeycomb cookie"></a>
+<a href="/bit-planes" data-cat="arcade"><img src="/bit-planes/icon.webp" alt="Bit Planes"></a>
+<a href="/football-bros" data-cat="sports"><img src="/football-bros/icon.webp" alt="Football Bros"></a>
+<a href="/tank" data-cat="racing"><img src="/tank/icon.webp" alt="Highway Traffic"></a>
+<a href="/cars" data-cat="sports"><img src="/cars/icon.png" alt="Bumper Cars Soccer"></a>
+<a href="/curve" data-cat="arcade"><img src="/curve/icon.jpg" alt="Curve Ball 3D"></a>
 
-<a data-cat="platformer" href="games/vex7/"><img src="images/vex7.jpeg" alt="Vex 7"></a>
-<a data-cat="platformer" href="games/vex6/"><img src="images/vex6.jpeg" alt="Vex 6"></a>
-<a data-cat="platformer" href="games/vex3/"><img src="images/vex3.jpg" alt="Vex 3"></a>
-<a data-cat="platformer" href="games/vex4/"><img src="images/vex4.jpg" alt="Vex 4"></a>
-<a data-cat="platformer" href="games/vex5/"><img src="images/vex5.jpg" alt="Vex 5"></a>
-
-<a data-cat="adventure" href="games/minecraft/"><img src="images/mc.png" alt="Minecraft"></a>
-
-<a data-cat="racing" href="games/moto-x3m/"><img src="images/moto-x3m.jpg" alt="Moto X3M"></a>
-<a data-cat="racing" href="games/motox3m2/"><img src="images/motox3m2.jpg" alt="Moto X3M 2"></a>
-<a data-cat="racing" href="games/drive-mad/"><img src="images/drive-mad.jpg" alt="Drive Mad"></a>
-<a data-cat="racing" href="games/drift-boss/"><img src="games/drift-boss/drift-boss.png" alt="Drift Boss"></a>
-<a data-cat="racing" href="games/dune/"><img src="games/dune/dune.jpg" alt="Dune"></a>
-<a data-cat="racing" href="games/slow-roads/"><img src="games/slow-roads/slow-roads.webp" alt="Slow Roads"></a>
-<a data-cat="racing" href="games/e-scooter/"><img src="games/e-scooter/e-scooter.jpg" alt="E-Scooter"></a>
-<a data-cat="racing" href="games/drift-hunters/"><img src="games/drift-hunters/drift-hunters.png" alt="Drift Hunters"></a>
-
-<a data-cat="sports" href="games/retro-bowl/"><img src="images/retro-bowl.jpg" alt="Retro Bowl"></a>
-<a data-cat="sports" href="games/basket-random/"><img src="games/basket-random/basket.png" alt="Basket Random"></a>
-<a data-cat="sports" href="games/basketball-stars/"><img src="games/basketball-stars/basketball-stars.webp" alt="Basketball Stars"></a>
-<a data-cat="sports" href="games/sls/"><img src="games/sls/sls.webp" alt="Super Liquid Soccer"></a>
-<a data-cat="sports" href="games/ten-basket/"><img src="games/ten-basket/ten-basket.png" alt="Ten Basket"></a>
-<a data-cat="sports" href="games/pko/"><img src="games/pko/pko.png" alt="Penalty Kick Online"></a>
-<a data-cat="sports" href="games/2min/"><img src="games/2min/418572a6bbddb5359501b93153290fba.png" alt="2 Minute Football"></a>
-<a data-cat="sports" href="/BasketAndBall/"><img src="/BasketAndBall/bab.png" alt="Basket And Ball"></a>
-
-<a data-cat="arcade" href="games/slope/"><img src="images/slope.jpg" alt="Slope"></a>
-<a data-cat="arcade" href="games/spiral-roll/"><img src="games/spiral-roll/spiral-roll.png" alt="Spiral Roll"></a>
-<a data-cat="arcade" href="games/hard-game/"><img src="games/hard-game/hard-game.webp" alt="The Worlds Hardest Game"></a>
-<a data-cat="arcade" href="games/fruit-ninja/"><img src="games/fruit-ninja/fruit-ninja.png" alt="Fruit Ninja"></a>
-<a data-cat="arcade" href="games/bridge-race/"><img src="games/bridge-race/bridge-race.webp" alt="Bridge Race"></a>
-<a data-cat="arcade" href="games/red-ball/"><img src="games/red-ball/red-ball.jpg" alt="Red Ball 4"></a>
-
-<a data-cat="puzzle" href="games/2048/"><img src="games/2048/2048.png" alt="2048"></a>
-<a data-cat="puzzle" href="games/happy-glass/"><img src="games/happy-glass/happy-glass.png" alt="Happy Glass"></a>
-<a data-cat="puzzle" href="games/bloxorz/"><img src="games/bloxorz/blox.jpg" alt="Bloxorz"></a>
-<a data-cat="puzzle" href="games/math-duck/"><img src="games/math-duck/math-duck.webp" alt="Math Duck"></a>
-
-<a data-cat="idle" href="games/Idle Breakout/"><img src="games/Idle Breakout/image.png" alt="Idle Breakout"></a>
-<a data-cat="idle" href="games/i-a/"><img src="games/99-n/i-a.jpg" alt="Idle Ants"></a>
-<a data-cat="idle" href="games/mining/"><img src="games/mining/mining.webp" alt="Idle Mining Empire"></a>
-<a data-cat="idle" href="games/idle-r/"><img src="games/idle-r/idle-r.webp" alt="Idle Restaurants"></a>
-<a data-cat="idle" href="games/cookie-clicker/"><img src="games/cookie-clicker/cookie1.jpeg" alt="Cookie Clicker"></a>
-
-<a data-cat="action" href="games/getaway-shootout/"><img src="games/getaway-shootout/img/images.jpg" alt="Getaway Shootout"></a>
-<a data-cat="action" href="games/r-a/"><img src="games/r-a/logo.jpeg" alt="Ragdoll Archers"></a>
-<a data-cat="action" href="games/r-h/"><img src="games/r-h/r-h.png" alt="Ragdoll Hit"></a>
-<a data-cat="action" href="games/g-s/"><img src="games/g-s/g-s.webp" alt="Gun Spin"></a>
-<a data-cat="action" href="games/boxing-random/"><img src="games/boxing-random/boxing-random.webp" alt="Boxing Random"></a>
-
-<a data-cat="io" href="games/yoho/"><img src="games/yoho/yoho.png" alt="Yohoho.io"></a>
-<a data-cat="io" href="/snowball"><img src="games/snowball.io/snowball.io.jpg" alt="Snowball.io"></a>
-<a data-cat="io" href="games/paper.io-2/"><img src="games/paper.io-2/paper.io-2.png" alt="Paper.io 2"></a>
-
-<a data-cat="platformer" href="games/ovo/"><img src="games/ovo/ovo.png" alt="OvO"></a>
-<a data-cat="platformer" href="/geometry-dash"><img src="images/geometry-dash.png" alt="Geometry Dash"></a>
-
-<a data-cat="adventure" href="games/u-y/"><img src="games/u-y/u-y.webp" alt="Undertale Yellow"></a>
-<a data-cat="adventure" href="games/99-n/"><img src="games/99-n/99-n.webp" alt="99 Nights in the Forest"></a>
-
-<a data-cat="arcade" href="games/just-fall/"><img src="games/just-fall/unnamed.png" alt="Just Fall"></a>
-
-<a data-cat="action" href="games/a-u/"><img src="games/a-u/a-u.png" alt="Among Us"></a>
-
-<a data-cat="arcade" href="games/spacebar-clicker/"><img src="games/spacebar-clicker/spacebar-clicker.png" alt="Spacebar Clicker"></a>
-
-<a data-cat="sports" href="games/soccer-random/"><img src="games/soccer-random/soccer-random.webp" alt="Soccer Random"></a>
-<a data-cat="sports" href="games/volley-random/"><img src="games/volley-random/volley-random.webp" alt="Volley Random"></a>
-
-<a data-cat="adventure" href="games/dl3/"><img src="games/dl3/dl3.jpg" alt="Duck Life 3"></a>
-
-<a data-cat="arcade" href="games/archery/"><img src="games/archery/archery.png" alt="Archery World Tour"></a>
-
-<a data-cat="action" href="games/rise-higher/"><img src="games/rise-higher/rise-higher.jpeg" alt="Rise Higher"></a>
-
-<a data-cat="arcade" href="games/unicycle-hero/"><img src="games/unicycle-hero/unicycle-hero.png" alt="Unicycle Hero"></a>
-
-<a data-cat="action" href="games/stick-merge/"><img src="games/stick-merge/stick-merge.webp" alt="Stick Merge"></a>
-
-<a data-cat="arcade" href="games/tf/"><img src="games/tf/tf.png" alt="Tiny Fishing"></a>
-
-<a data-cat="platformer" href="games/swingo/"><img src="games/b-s/b-s.png" alt="Blumgi Swingo"></a>
-
-<a data-cat="racing" href="games/msc2/"><img src="games/msc2/msc2.png" alt="Madalin Stunt Cars 2"></a>
-
-<a data-cat="arcade" href="games/ping1/"><img src="games/ping/ping.avif" alt="Ping Pong Go"></a>
-
-<a data-cat="arcade" href="games/bottle-flip/"><img src="games/bottle-flip/bottle-flip.webp" alt="Bottle Flip"></a>
-
-<a data-cat="adventure" href="games/crazy-cars/"><img src="games/crazy-cars/crazy-cars.webp" alt="Crazy Cars"></a>
-
-<a data-cat="action" href="games/burn/"><img src="games/burn/burn.jpg" alt="Burnin' Rubber"></a>
-
-<a data-cat="arcade" href="games/sb/"><img src="games/sb/sb.jpg" alt="Sand Boxels"></a>
 
   `;
 
