@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Play Game</title>
+
+  <style>
+    body {
+      margin: 0;
+      background: #000;
+    }
+
+    iframe {
+      width: 100vw;
+      height: 100vh;
+      border: none;
+    }
+
+    #back {
+      position: fixed;
+      top: 15px;
+      left: 15px;
+      background: white;
+      padding: 10px 15px;
+      border-radius: 8px;
+      font-family: Arial;
+      cursor: pointer;
+      z-index: 9999;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+  </style>
+</head>
+<body>
+
+<div id="back" onclick="history.back()">← Back</div>
+
+<script>
+  const params = new URLSearchParams(window.location.search);
+  const gameURL = params.get("game");
+
+  if (gameURL) {
+    const iframe = document.createElement("iframe");
+    iframe.src = gameURL;
+    document.body.appendChild(iframe);
+  }
+</script>
+
+</body>
+</html>
