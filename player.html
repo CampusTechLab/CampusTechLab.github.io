@@ -69,6 +69,24 @@ function openGame() {
   meta.content = "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover";
   win.document.head.appendChild(meta);
 
+  // --- FULLSCREEN BUTTON ---
+  const fsBtn = win.document.createElement("button");
+  fsBtn.innerText = "Fullscreen";
+  fsBtn.style.position = "fixed";
+  fsBtn.style.top = "10px";
+  fsBtn.style.right = "10px";
+  fsBtn.style.zIndex = "9999";
+  fsBtn.style.padding = "10px 15px";
+  fsBtn.style.background = "#00eaff";
+  fsBtn.style.color = "#000";
+  fsBtn.style.border = "none";
+  fsBtn.style.borderRadius = "8px";
+  fsBtn.style.fontWeight = "bold";
+  fsBtn.style.boxShadow = "0 0 12px #00eaff";
+  fsBtn.style.cursor = "pointer";
+
+  win.document.body.appendChild(fsBtn);
+
   // Create iframe
   const iframe = win.document.createElement("iframe");
   iframe.src = gameURL;
@@ -85,8 +103,14 @@ function openGame() {
   iframe.style.transform = "translateZ(0)";
   iframe.style.webkitTransform = "translateZ(0)";
 
-  // Append iframe
   win.document.body.appendChild(iframe);
+
+  // Fullscreen logic
+  fsBtn.onclick = () => {
+    if (iframe.requestFullscreen) iframe.requestFullscreen();
+    else if (iframe.webkitRequestFullscreen) iframe.webkitRequestFullscreen();
+    else if (iframe.msRequestFullscreen) iframe.msRequestFullscreen();
+  };
 
   // Stealth title
   win.document.title = "Audio Book";
